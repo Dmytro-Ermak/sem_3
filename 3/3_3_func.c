@@ -2,7 +2,7 @@
 #include "3_3.h"
 
 int input_cnt(char list[], int counter[]){
-    char symb;
+    int symb;
     int max = 0;
     int i = 0;
     puts("enter the string:");
