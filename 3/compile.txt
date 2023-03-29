@@ -3,7 +3,7 @@ gcc 3_1.c 3_1_func.c -o 3_1
 .\3_1
 
 2:
-gcc 3_2.c 3_2_func.c -o 3_2
+gcc 3_2_main.c 3_2_func.c -o 3_2
 .\3_2
 
 3:

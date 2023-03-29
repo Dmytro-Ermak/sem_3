@@ -16,8 +16,8 @@ void full(char str[]){
             }
             else{
                 if (str[i-1] >= (start = '0') && str[i-1] <= (finish = '9') && str[i+1] >= '0' && str[i+1] <= '9'){}
-                else if (str[i-1] >= (start = 'a') && str[i-1] <= (finish = 'z') && str[i+1] >= 'a' && str[i+1] <= 'z'){}
-                else if (str[i-1] >= (start = 'A') && str[i-1] <= (finish = 'Z') && str[i+1] >= 'A' && str[i+1] <= 'Z'){}
+                else if (str[i-1] >= (start = 'A') && str[i-1] <= (finish = 'z') && str[i+1] >= 'A' && str[i+1] <= 'z'){}
+                //else if (str[i-1] >= (start = 'A') && str[i-1] <= (finish = 'Z') && str[i+1] >= 'A' && str[i+1] <= 'Z'){}
                 else{
                     putchar(symb);
                     ++i;

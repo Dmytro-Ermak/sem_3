@@ -2,7 +2,7 @@
 #include "3_3.h"
 
 int input_cnt(char list[], int counter[]){
-    char symb;
+    int symb;
     int max = 0;
     int i = 0;
     puts("enter the string:");
@@ -11,7 +11,7 @@ int input_cnt(char list[], int counter[]){
         ++i;
         if (symb >= '0' && symb <= '9'){
             counter[symb - 48] += 1;
-            if(counter[symb-48] > max){
+            if(counter[symb - 48] > max){
                 ++max;
             }
         }
@@ -23,7 +23,7 @@ int input_cnt(char list[], int counter[]){
 void gist(int counter[]){
     for(char i = '0'; i <= '9'; ++i){
         printf("%c: ", i);
-        for (int j = 1; j <= counter[i-48]; ++j){
+        for (int j = 1; j <= counter[i - 48]; ++j){
             putchar('#');
         }
         putchar('\n');
